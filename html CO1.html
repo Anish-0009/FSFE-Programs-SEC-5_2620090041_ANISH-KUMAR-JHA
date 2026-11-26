@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Online Examination Platform for students to take online tests and view results.">
+  <title>Online Examination Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="ExamPortal home">ExamPortal</a>
+    <nav aria-label="Main navigation">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#exams">Examinations</a>
+      <a href="#results">Results</a>
+    </nav>
+    <a class="profile-link" href="#login">Student Login</a>
+  </header>
+
+  <main>
+    <section class="hero" id="dashboard">
+      <div>
+        <p class="eyebrow">ONLINE LEARNING & ASSESSMENT</p>
+        <h1>Welcome to your examination portal</h1>
+        <p class="hero-copy">Attend your scheduled examinations, track your progress, and review your results in one place.</p>
+        <a class="primary-button" href="#exams">View examinations</a>
+      </div>
+      <aside class="welcome-card" aria-label="Student summary">
+        <p class="card-label">STUDENT OVERVIEW</p>
+        <h2>Ready to begin?</h2>
+        <p>Check your upcoming tests and make sure you are prepared before starting.</p>
+        <div class="summary-row"><span>Available tests</span><strong>03</strong></div>
+        <div class="summary-row"><span>Completed tests</span><strong>08</strong></div>
+      </aside>
+    </section>
+
+    <section class="section" id="exams">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR ASSESSMENTS</p>
+          <h2>Available examinations</h2>
+        </div>
+        <span class="status-pill">3 tests available</span>
+      </div>
+
+      <div class="exam-grid">
+        <article class="exam-card">
+          <span class="subject-tag">Computer Science</span>
+          <h3>HTML Fundamentals</h3>
+          <p>Test your knowledge of HTML elements, forms, and semantic structure.</p>
+          <div class="exam-meta"><span>20 Questions</span><span>30 Minutes</span></div>
+          <a class="secondary-button" href="#login">Start examination</a>
+        </article>
+
+        <article class="exam-card">
+          <span class="subject-tag">Web Design</span>
+          <h3>CSS Basics</h3>
+          <p>Answer questions about selectors, layouts, Flexbox, and responsive design.</p>
+          <div class="exam-meta"><span>15 Questions</span><span>25 Minutes</span></div>
+          <a class="secondary-button" href="#login">Start examination</a>
+        </article>
+
+        <article class="exam-card">
+          <span class="subject-tag">Programming</span>
+          <h3>JavaScript Basics</h3>
+          <p>Review variables, functions, events, and basic JavaScript concepts.</p>
+          <div class="exam-meta"><span>25 Questions</span><span>40 Minutes</span></div>
+          <a class="secondary-button" href="#login">Start examination</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="login-section" id="login">
+      <div>
+        <p class="eyebrow">STUDENT ACCESS</p>
+        <h2>Student login</h2>
+        <p>Enter your details to access your examination account.</p>
+      </div>
+      <form class="login-form" action="#" method="get">
+        <label for="student-email">Email address</label>
+        <input id="student-email" name="email" type="email" placeholder="student@example.com" required>
+        <label for="student-password">Password</label>
+        <input id="student-password" name="password" type="password" placeholder="Enter your password" required minlength="6">
+        <button class="primary-button" type="submit">Login</button>
+      </form>
+    </section>
+
+    <section class="section result-section" id="results">
+      <p class="eyebrow">PERFORMANCE</p>
+      <h2>Track your results</h2>
+      <p>Your examination results and progress can be displayed here after you complete a test.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 ExamPortal · Online Examination Platform</p>
+  </footer>
+</body>
+</html>
